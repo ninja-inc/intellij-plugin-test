@@ -1,0 +1,38 @@
+<idea-plugin version="2">
+    <id>ninja-inc</id>
+    <name>Plugin display name here</name>
+    <version>1.0-SNAPSHOT</version>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    ]]></description>
+
+    <change-notes><![CDATA[
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="2017.3"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <application-components>
+    </application-components>
+
+    <project-components>
+    </project-components>
+
+    <actions>
+		<action id="MainMenuTest" class="test.MainMenuTest" text="MainMenuTest">
+			<add-to-group group-id="MainMenu" anchor="first"/>
+		</action>
+	</actions>
+
+</idea-plugin>
