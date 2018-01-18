@@ -1,9 +1,10 @@
-package test
+package ninja.test
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.ui.Messages
+import org.springframework.web.socket.client.standard.StandardWebSocketClient
 
 class MainMenuTest : AnAction() {
 

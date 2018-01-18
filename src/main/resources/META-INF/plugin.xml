@@ -30,8 +30,11 @@
     </project-components>
 
     <actions>
-		<action id="MainMenuTest" class="test.MainMenuTest" text="MainMenuTest">
+		<action id="MainMenuTest" class="ninja.test.MainMenuTest" text="MainMenuTest">
 			<add-to-group group-id="MainMenu" anchor="first"/>
+		</action>
+		<action id="ReplaceText" class="ninja.test.ReplaceText" text="ReplaceText" description="ReplaceText">
+			<add-to-group group-id="EditorPopupMenu" anchor="first"/>
 		</action>
 	</actions>
 
