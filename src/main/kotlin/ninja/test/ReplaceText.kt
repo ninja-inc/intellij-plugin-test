@@ -7,6 +7,18 @@ import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.command.WriteCommandAction
 
 class ReplaceText : AnAction() {
+    /*
+    override fun update(e: AnActionEvent) {
+        val editor = e.getRequiredData(CommonDataKeys.EDITOR)
+        val project = e.getRequiredData(CommonDataKeys.PROJECT)
+
+        if (project != null
+                && editor != null
+                && editor.selectionModel.hasSelection()) {
+            e.presentation.isEnabledAndVisible
+        }
+    }
+    */
 
     override fun actionPerformed(e: AnActionEvent) {
         val editor = e.getRequiredData(CommonDataKeys.EDITOR)
