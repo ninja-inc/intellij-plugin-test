@@ -1,4 +1,4 @@
-<idea-plugin version="2">
+<idea-plugin>
     <id>ninja-inc</id>
     <name>Plugin display name here</name>
     <version>1.0-SNAPSHOT</version>
@@ -29,6 +29,11 @@
     <project-components>
     </project-components>
 
+	<extensions defaultExtensionNs="com.intellij">
+		<toolWindow id="Websocket Client" anchor="bottom" icon="/actions/execute.png"
+					factoryClass="ninja.test.websocket.WebsocketUiFactory" />
+	</extensions>
+
     <actions>
 		<action id="MainMenuTest" class="ninja.test.MainMenuTest" text="MainMenuTest">
 			<add-to-group group-id="MainMenu" anchor="first"/>
@@ -40,6 +45,15 @@
 				description="TypeEventIllustration">
 			<add-to-group group-id="EditorPopupMenu" anchor="first"/>
 		</action>
+
+		<group id="WebsocketClient.Toolbar">
+			<action id="ConnectAction" icon="/actions/execute.png"
+					class="ninja.test.websocket.action.ConnectAction"/>
+			<action id="DisconnectAction" icon="/actions/cancel.png"
+					class="ninja.test.websocket.action.DisconnectAction"/>
+			<action id="SendAction" icon="/actions/redo.png"
+					class="ninja.test.websocket.action.SendAction"/>
+		</group>
 	</actions>
 
 </idea-plugin>
