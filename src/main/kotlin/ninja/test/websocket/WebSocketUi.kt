@@ -12,11 +12,20 @@ import com.intellij.ui.components.JBPanel
 import com.intellij.ui.components.JBTextField
 import java.awt.BorderLayout
 import java.awt.FlowLayout
+import javax.swing.JTextField
 import javax.swing.SwingConstants
 
 class WebSocketUi: SimpleToolWindowPanel {
     val log = Logger.getInstance(this::class.java)
 
+    constructor() : super(true, false) {
+        log.info("WebSocketUi constructor, test")
+
+        val textField = JTextField(8)
+        this.add(textField)
+    }
+
+/*
     constructor(): super(true, false) {
         log.info("WebSocketUi constructor")
 
@@ -60,4 +69,5 @@ class WebSocketUi: SimpleToolWindowPanel {
 
         return toolbar
     }
+        */
 }
